@@ -1,0 +1,116 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-ios;net6.0-android</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EditorsGetStarted</RootNamespace>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <!-- Display name -->
+    <ApplicationTitle>EditorsGetStarted</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.EditorsGetStarted</ApplicationId>
+    <!-- Versions -->
+    <ApplicationVersion>1.0</ApplicationVersion>
+    <AndroidVersionCode>1</AndroidVersionCode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Required for C# Hot Reload -->
+    <UseInterpreter Condition="'$(Configuration)' == 'Debug'">True</UseInterpreter>
+    <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-ios'">14.2</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- App Icon -->
+    <MauiImage Include="Resources\appicon.svg" ForegroundFile="Resources\appiconfg.svg" IsAppIcon="true" Color="#512BD4"/>
+    <MauiImage Include="Resources\cake_black_24dp.svg"/>
+    <MauiImage Include="Resources\cake_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\edit_black_24dp.svg"/>
+    <MauiImage Include="Resources\edit_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\email_black_24dp.svg"/>
+    <MauiImage Include="Resources\email_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\face_black_24dp.svg"/>
+    <MauiImage Include="Resources\face_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\notes_black_24dp.svg"/>
+    <MauiImage Include="Resources\notes_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\password_black_24dp.svg"/>
+    <MauiImage Include="Resources\password_black_24dp_filled.svg"/>
+    <MauiImage Include="Resources\phone_black_24dp.svg"/>
+    <MauiImage Include="Resources\phone_black_24dp_filled.svg"/>
+    <!-- Splash Screen -->
+    <MauiSplashScreen Include="Resources\appiconfg.svg" Color="#512BD4"/>
+    <!-- Images -->
+    <MauiImage Include="Resources\Images\*"/>
+    <!-- Custom Fonts -->
+    <MauiFont Include="Resources\Fonts\*"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\cake_black_24dp.svg"/>
+    <None Remove="Resources\cake_black_24dp_filled.svg"/>
+    <None Remove="Resources\edit_black_24dp.svg"/>
+    <None Remove="Resources\edit_black_24dp_filled.svg"/>
+    <None Remove="Resources\email_black_24dp.svg"/>
+    <None Remove="Resources\email_black_24dp_filled.svg"/>
+    <None Remove="Resources\face_black_24dp.svg"/>
+    <None Remove="Resources\face_black_24dp_filled.svg"/>
+    <None Remove="Resources\Images\editors_email.xml"/>
+    <None Remove="Resources\notes_black_24dp.svg"/>
+    <None Remove="Resources\notes_black_24dp_filled.svg"/>
+    <None Remove="Resources\password_black_24dp.svg"/>
+    <None Remove="Resources\password_black_24dp_filled.svg"/>
+    <None Remove="Resources\phone_black_24dp.svg"/>
+    <None Remove="Resources\phone_black_24dp_filled.svg"/>
+  </ItemGroup>
+  <ItemGroup/>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+    <Reference Include="DevExpress.Maui.Android.Navigation">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Android.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Editors">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Controls">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Android.CollectionView">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Android.CollectionView.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Android.Editors">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Android.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Core">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.CollectionView">
+      <HintPath>..\Binaries\Android\DevExpress.Maui.CollectionView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.6.20.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios'">
+    <Reference Include="DevExpress.Maui.iOS.Editors">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.iOS.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Editors">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Controls">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.iOS.Navigation">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.iOS.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.iOS.CollectionView">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.iOS.CollectionView.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.Core">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Maui.CollectionView">
+      <HintPath>..\Binaries\iOS\iossimulator-x64\DevExpress.Maui.CollectionView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Maui.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Maui.Core.Filtering.Helpers.CriteriaParser">
+            <summary>
+               The C# Parser
+            </summary>
+        </member>
+        <member name="M:DevExpress.XtraExport.Xl.CriteriaOperatorToXlExpressionConverter.TestConvert(System.String)">
+            <summary> Use this method only for tests </summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxRecordDataSize">
+            <summary>8224</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxFontNameLength">
+            <summary>31</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxSheetNameLength">
+            <summary>31</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxFontRecordsCount">
+            <summary>510</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxFormatRecordsCount">
+            <summary>218</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MinStringsInBucket">
+            <summary>8</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxHeaderFooterLength">
+            <summary>255</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxColumnCount">
+            <summary>256</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxRowCount">
+            <summary>65536</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxLelIndex">
+            <summary>2048</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxMergeCellCount">
+            <summary>1026</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxOutlineLevel">
+            <summary>7</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxXFCount">
+            <summary>4050</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxStyleXFCount">
+            <summary>2048</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxCellXFCount">
+            <summary>2048</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDefaultRowHeight">
+            <summary>8179</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MinMarginInInches">
+            <summary>0.0</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxMarginInInches">
+            <summary>49.0</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxCFRefCount">
+            <summary>513</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxFormulaStringLength">
+            <summary>1024</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxFormulaBytesSize">
+            <summary>1800</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDataValidationRecordCount">
+            <summary>65534</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDataValidationSqRefCount">
+            <summary>432</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDataValidationTitleLength">
+            <summary>32</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDataValidationPromptLength">
+            <summary>255</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.MaxDataValidationErrorLength">
+            <summary>225</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.UnusedFontIndex">
+            <summary>4</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultColumnWidth">
+            <summary>8</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultRowHeightInTwips">
+            <summary>255</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.FullRangeColumnIndex">
+            <summary>256</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.NoScope">
+            <summary>-2</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.BIFFVersion">
+            <summary>0x0600</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultBuildYear">
+            <summary>0x07cd</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultBuildIdentifier">
+            <summary>0x3267</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultVersionXL">
+            <summary>14</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultHeaderFooterMargin">
+            <summary>0.3</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultLeftRightMargin">
+            <summary>0.7</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultTopBottomMargin">
+            <summary>0.75</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultStyleXFIndex">
+            <summary>0</summary>
+        </member>
+        <member name="F:DevExpress.XtraExport.Xls.XlsDefs.DefaultCellXFIndex">
+            <summary>15</summary>
+        </member>
+    </members>
+</doc>
